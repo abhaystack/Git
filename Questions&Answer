@@ -1,0 +1,120 @@
+Suppose you are a new member in a team which is working on a project. You would 
+want the repository in your system so that you would be able to see and contribute to 
+the code. What git command would you use to initialize the repository on your 
+system ? 
+
+
+git clone 
+
+
+You are working on a feature and has written the code for it. How will you commit the 
+unstaged code into the repository? Consider that there are nearly 30 files in the 
+repository and you made changes in 4 of them. 
+
+git add. git commit -m "commit message" 
+
+Consider the same previous question but in this case you made changes in all the 30 
+files. What would be the easy way to stage and commit the files in as minimum 
+commands as possible? 
+
+git add and git commit -m "commit message" 
+· 
+Your colleague is working on the same project as you are. She is working on a 
+feature in a branch named "feature-x" on her own repository with ssh/http as 
+"colleague123.git" and wants you to continue on the same feature as she is 
+unavailable for a week. How would you get all the code which she has written using 
+git? 
+
+git remote add origin collegue123.git 
+
+Suppose you have finished working on some new pages in a project and want it 
+reviewed from your team head. How would you push all your code and create a pull 
+request to the team head? Consider your branch name as "gen-v1" and remote 
+name as "origin" and the team head's branch name as "master" and remote name as 
+"upstream". 
+
+git add. 
+git commit -m 
+git push -u origin gen-v1 
+
+You are working on a requirement and has not committed any changes. Suddenly 
+you receive a higher priority task and you have to work on it immediately. You don't 
+want to lose all your progress on the previous requirement. Which git command will 
+you use to keep things in order and work out the situation smoothly? 
+
+git stash 
+
+You are a new member on a project and want to see the commit history in the 
+project. Which git command is required in this scenario? 
+
+git log 
+
+You like working with git stashes and now there are so many stash piled up. You 
+want to clear all of them. Which git command suits your situation? 
+
+git stash clear 
+
+You added a feature and has also committed it. But it is no longer required and you 
+want to move to the previous commit. Which git command is required here? 
+Consider the previous commit hash as "abc123". 
+
+git revert abc123 
+
+Kelly has two branches in his repository named "branch-1" and "branch-2". He wants 
+you to work on his project on a new branch and after you are done you have to 
+create a pull request to Kelly in "branch-1". Write the suitable git commands required 
+here. 
+
+
+git clone <repository_url> 
+git checkout -b--- .-1 
+git push origin new-branch 
+
+Ilgo to browser and make an pull request 
+Which git command is equivalent to fetch and merge? 
+
+git pull 
+
+Consider the project on which you are working on has different branches. Which 
+command will you use for switching between them? 
+
+
+git checkout 
+
+
+You and your colleague are working on the same project. How would you establish a 
+connection between the local and remote repository? Write the suitable command 
+used for this. 
+
+
+git remote add origin <repo> 
+
+
+What git command you will use if you want to identify all the remote repositories to 
+which you are connected? 
+
+
+git remote 
+
+
+Your project consist of some sensitive information which you don't want to push into 
+your repository. Name the file which can be configured to ensure that certain files are 
+never committed to the local Git repository 
+
+
+.gitignore 
+
+
+Your colleague have created many git stashes and he wants your help to see the list 
+of all stored stashes. Which git command you will use to help him? 
+
+
+git stash list 
+
+
+Suppose you are in "branch-1" and you have a useful commit in "branch-2" with 
+commit hash as "123abc". You want this commit in your "branch-1" rather than 
+pulling all the code from there. Write down the required command(s) in this case. 
+
+
+git chery-pick 123abc 
